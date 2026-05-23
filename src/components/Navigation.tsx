@@ -61,9 +61,7 @@ export function Navigation() {
             transition={{ duration: 0.65, delay: 0.15, ease: NAV_EASE }}
           >
             <Link href="#" className="group relative z-10 flex items-center gap-2">
-              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-cyan-400 to-purple-500 text-sm font-bold text-on-accent shadow-[0_0_20px_rgba(34,211,238,0.25)]">
-                DA
-              </span>
+              
               <span
                 className="hidden text-lg font-semibold tracking-tight sm:block"
                 style={{ fontFamily: "var(--font-playfair), serif" }}
