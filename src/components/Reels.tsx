@@ -9,6 +9,7 @@ const REELS = [
     quote: "Healing begins when you finally choose yourself.",
     gradient: "from-cyan-900/80 to-blue-900/80",
     tag: "Healing",
+    reel: "https://www.instagram.com/reel/DYfO3-OhX29/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
   },
   {
     theme: "Mindset Lessons",
@@ -72,7 +73,10 @@ export function Reels() {
 
         <div className="flex gap-5 overflow-x-auto pb-6 scrollbar-thin md:grid md:grid-cols-3 md:overflow-visible lg:grid-cols-3">
           {REELS.map((reel, i) => (
-            <motion.article
+            <motion.a
+              href={reel.reel}
+              target="_blank"
+              rel="noopener noreferrer"
               key={reel.theme}
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -113,7 +117,7 @@ export function Reels() {
               <div className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 <div className="absolute inset-0 bg-gradient-to-t from-cyan-500/10 to-transparent" />
               </div>
-            </motion.article>
+            </motion.a>
           ))}
         </div>
       </div>

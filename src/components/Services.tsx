@@ -42,7 +42,7 @@ const SERVICES = [
     quote: "Let go of emotional pain and become unstoppable.",
   },
   {
-    icon: "🌸",
+    icon: "👩",
     title: "Women Empowerment Mentorship",
     desc: "Empower your inner goddess and step into your most powerful self.",
     quote: "Protect your energy.",
